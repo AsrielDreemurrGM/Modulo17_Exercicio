@@ -1,5 +1,7 @@
 @import "variaveis.less";
 @import "mapas";
+@breakMobile: ~"(max-width: 767px)";
+@breakTablet: ~"(max-width: 1023px)";
 
 .flex {
     display: flex;
@@ -15,15 +17,15 @@
 body {
     background-color: @corDeFundo;
 
-    .container {
-        max-width: 1024px;
-        width: 100%;
-        margin: 0 auto;
-
-        li {
-            list-style: none;
-        }
+    li {
+        list-style: none;
     }
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 header {
@@ -86,6 +88,27 @@ section {
                     background-color: @corHover;
                 }
             }
+        }
+    }
+}
+
+@media @breakTablet {
+    .container {
+        max-width: 80%;
+
+        .products {
+            grid-template-columns: repeat(2, 48.5%);
+            column-gap: 3%;
+        }
+    }
+}
+
+@media @breakMobile {
+    section .products {
+        display: block;
+
+        .product-item {
+            margin-bottom: 32px;
         }
     }
 }
