@@ -1,5 +1,5 @@
-@import "variaveis.less";
-@import "mapas";
+@import "variables.less";
+@import "maps";
 @breakMobile: ~"(max-width: 767px)";
 @breakTablet: ~"(max-width: 1023px)";
 
@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: @corDeFundo;
+    background-color: @backgroundColor;
 
     li {
         list-style: none;
@@ -29,7 +29,7 @@ body {
 }
 
 header {
-    background-color: @corCabecalho;
+    background-color: @headerColor;
     position: sticky;
     top: 0;
     left: 0;
@@ -49,7 +49,7 @@ header {
             margin-left: 24px;
 
             a {
-                color: #cores[corDoTexto1];
+                color: #colors[textColor1];
                 text-decoration: none;
             }
         }
@@ -74,8 +74,8 @@ section {
 
             .product-button {
                 display: block;
-                background-color: @corBotao;
-                color: #cores[corDoTexto2];
+                background-color: @buttonColor;
+                color: #colors[textColor2];
                 text-align: center;
                 padding: 8px 0;
                 border-radius: 8px;
@@ -83,7 +83,7 @@ section {
                 text-decoration: none;
 
                 &:hover {
-                    background-color: @corHover;
+                    background-color: @hoverColor;
                 }
             }
         }

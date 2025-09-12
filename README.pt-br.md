@@ -4,7 +4,7 @@
 </p>
 <p>
   Este projeto é um site responsivo de exibição de produtos, construído com <strong>LESS</strong>.
-  Demonstra o uso de variáveis, mixins, mapas de cores, media queries e compilação automatizada com plugins do LESS.
+  Demonstra o uso de variáveis, mixins, mapas de colors, media queries e compilação automatizada com plugins do LESS.
   O layout conta com um cabeçalho fixo (sticky), uma grade de produtos responsiva e botões interativos.
 </p>
 <p>
@@ -32,7 +32,7 @@
 <ul>
   <li>Cabeçalho fixo com navegação</li>
   <li>Grade de produtos responsiva usando CSS Grid</li>
-  <li>Variáveis, mixins e mapas de cores reutilizáveis em LESS</li>
+  <li>Variáveis, mixins e mapas de colors reutilizáveis em LESS</li>
   <li>Botões interativos com efeitos de hover</li>
   <li>Imagens de placeholder para fácil personalização</li>
 </ul>
