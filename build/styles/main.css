@@ -47,9 +47,8 @@ section {
 section .products {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(3, 32.66%);
-  column-gap: 1%;
-  row-gap: 4%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   width: 100%;
 }
 section .products .product-item img {
@@ -79,10 +78,10 @@ section .products .product-item .product-button:hover {
   }
 }
 @media (max-width: 767px) {
-  section .products {
+  .products {
     display: block;
   }
-  section .products .product-item {
+  .products .product-item {
     margin-bottom: 32px;
   }
 }

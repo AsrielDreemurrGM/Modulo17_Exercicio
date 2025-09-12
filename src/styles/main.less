@@ -62,18 +62,16 @@ section {
     .products {
         margin-top: 40px;
         display: grid;
-        grid-template-columns: repeat(3, 32.66%);
-        column-gap: 1%;
-        row-gap: 4%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
         width: 100%;
-    
-        
+
         .product-item {
             img {
                 width: 100%;
                 border-radius: 16px;
             }
-            
+
             .product-button {
                 display: block;
                 background-color: @corBotao;
@@ -84,7 +82,7 @@ section {
                 margin-top: 8px;
                 text-decoration: none;
 
-                &:hover{
+                &:hover {
                     background-color: @corHover;
                 }
             }
@@ -104,7 +102,7 @@ section {
 }
 
 @media @breakMobile {
-    section .products {
+    .products {
         display: block;
 
         .product-item {
